@@ -13,13 +13,13 @@ public class Exercicio01 extends Thread{
 
     @Override
     public void run(){
-        for(int i = 0; i < this.array.length;i++){
-            System.out.printf("Thread %s - %d\n", this.nome,this.array[i]);
+        for (int numberArray : this.array) {
+            System.out.printf("Thread %s - %d\n", this.nome, numberArray);
         }
         System.out.println("\nVetor Ordenado\n");
         Arrays.sort(this.array);
-        for(int i = 0; i < this.array.length;i++){
-            System.out.printf("Thread %s - %d\n", this.nome,this.array[i]);
+        for (int numberArrayOrder : this.array) {
+            System.out.printf("Thread %s - %d\n", this.nome, numberArrayOrder);
         }
     }
 }
