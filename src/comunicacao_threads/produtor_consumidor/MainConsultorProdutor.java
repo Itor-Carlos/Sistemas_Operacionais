@@ -9,6 +9,5 @@ public class MainConsultorProdutor {
 
         produtor.start();
         consumidor.start();
-
     }
 }
