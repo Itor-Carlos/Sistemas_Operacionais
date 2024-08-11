@@ -1,7 +1,5 @@
 package comunicacao_threads.produtor_consumidor;
 
-import java.util.Random;
-
 public class Consumidor extends Thread{
 
     private Buffer buffer;
