@@ -15,7 +15,6 @@ public class Buffer {
             wait();
         }
         elements[quantidadeItens] = item;
-        System.out.printf("Item produzido: %d\n", item);
         quantidadeItens++;
         System.out.println(quantidadeItens);
         notify();
@@ -24,7 +23,6 @@ public class Buffer {
     public synchronized void consumeItem() throws InterruptedException {
         while (quantidadeItens == 0) {
             wait();
-            System.out.println("aqui");
         }
         System.out.printf("Item removido: %d\n", elements[quantidadeItens]);
         quantidadeItens--;
